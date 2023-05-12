@@ -1,0 +1,348 @@
+:root {
+    --primary : #32594A;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    overflow-x: hidden !important;
+
+}
+
+.btn-primary {
+    background-color: #32594A !important;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.bg-primary {
+    background-color: var(--primary) !important;
+}
+
+.text-primary {
+    color: var(--primary) !important;
+}
+
+.header {
+    font-size: 3.5rem;
+    color: var(--primary);
+    font-weight: bold;
+}
+
+
+.shrink {
+    padding-top: 0;
+    background-color: #ffffff;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    color: black;
+
+}
+
+.bg-agensi,
+.alert {
+    background: #32594A;
+    color: white;
+}
+
+.preloader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100%;
+    z-index: 9999999999;
+    background-color:  #32594A;
+}
+
+.preloader .loading {
+    position: absolute;
+    top: 50%;
+    width: 100vw !important;
+    bottom: 50%;
+}
+
+
+.employee{
+    transform: translateY(-10%);
+}
+/* Animasi Kilau */
+@keyframes shine {
+    0% {
+        background-position-x: -500%;
+    }
+    100% {
+        background-position-x: 500%;
+    }
+}
+
+ .team, .title {
+    color: #32594A;
+}
+.partner{
+    color: #32594A;
+}
+#contact,
+.text-footer,
+.address-text,
+.credit,
+.footer-sub,
+.bi {
+    color: #ffffff;
+}
+
+.swiper {
+    width: 100%;
+    height: 100%;
+}
+
+.navbar-brand img {
+    height: 30px;
+    width: auto;
+}
+
+.swiperFull {
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+    transform: translateY(20% );
+}
+
+
+.swiper-slide.slide2 img {
+    height: 100%;
+
+    filter: grayscale(100%);
+}
+
+.swiper-slide img {
+    width: 100%;
+    height: 100px;
+    object-fit: cover;
+    filter: grayscale(0%);
+
+    cursor: pointer;
+}
+
+.swiper-slide img:hover {
+    filter: grayscale(0%);
+}
+
+#about img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+
+.container#team,
+.container-fluid #about {
+    overflow: hidden;
+}
+
+#team img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    filter: grayscale(100%);
+    cursor: pointer;
+}
+
+#team img:hover {
+    filter: grayscale(0%);
+}
+
+#about h2,
+.title-text,
+.F-about {
+    font-weight: 700;
+}
+
+#about p {
+    font-weight: 300;
+    text-align: left;
+}
+
+.text-about {
+    margin: 0;
+    padding: 0;
+}
+input {
+    color: white;
+    background-color: #32594A;
+    border-radius: 5px;
+    border: none;
+    padding: 10px;
+    
+}
+input {
+    border-top-style: hidden;
+    border-right-style: hidden;
+    border-left-style: hidden;
+    border-bottom-style: groove;
+    background-color: rgb(0, 0, 0);
+    color: white;
+    width: 100%;
+    padding-bottom: 10px;
+ }
+
+
+.about-us .btn-send
+{
+    color: black;
+    background-color: white;
+    border-radius: 5px;
+    border: 1px solid black;
+    /* padding: 10px; */
+    
+}
+#contact .btn-send:hover
+{
+    color: white;
+    background-color: black;
+    border-radius: 5px;
+    border: 1px solid ;
+    /* padding: 10px; */
+    transition: ease 0.3s;
+
+    
+}
+
+
+.video-background-holder {
+    position: relative;
+    background-color: black;
+    height: calc(100vh - 72px);
+    min-height: 25rem;
+    width: 100%;
+    overflow: hidden;
+}
+
+.video-background-holder video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: 0;
+    -ms-transform: translateX(-50%) translateY(-50%);
+    -moz-transform: translateX(-50%) translateY(-50%);
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+}
+
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: white;
+  font-size: 17px;
+}
+
+::value { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: white;
+    font-size: 15px;
+  }
+  
+.fas{
+    color: #32594A;
+}
+
+.modal-content {
+    padding: 30px;
+    font-weight: normal;
+}
+
+
+
+
+
+img.brand-footer {
+    width: 70%;
+    height: auto;
+}
+
+i {
+    font-size: 22px;
+}
+/* Extra small devices (phones, 600px and down) */
+
+@media only screen and (max-width: 600px) {
+ 
+    #banner {
+        padding-top: 0;
+        padding-bottom: 0;
+        color: black;
+    }
+   
+    .navbar-brand img {
+        height: 22px;
+        width: auto;
+        background: rgba(255, 255, 255, 0.564);
+
+    }
+
+    .header {
+        font-size: 32px;
+        margin: 0 !important
+        ;
+    }
+    .sub-header {
+        font-size: 16px;
+        line-height: 1.5;
+    }
+
+ 
+    
+}
+
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+
+@media only screen and (min-width: 600px) {
+ 
+   
+    .navbar-brand img {
+        height: 22px;
+        width: auto;
+    }
+
+    
+}
+
+
+/* Medium devices (landscape tablets, 768px and up) */
+
+@media only screen and (min-width: 768px) {
+
+   
+    .navbar-brand img {
+        height: 30px;
+        width: auto;
+    }
+  
+}
+
+
+/* Large devices (laptops/desktops, 992px and up) */
+
+@media only screen and (min-width: 992px) {
+
+   
+    .navbar-brand img {
+        height: 30px;
+        width: auto;
+    }
+}
+
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+
+@media only screen and (min-width: 1200px) {
+
+   
+    .navbar-brand img {
+        height: 30px;
+        width: auto;
+    }
+}
+
